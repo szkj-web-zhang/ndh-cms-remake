@@ -1,0 +1,39 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div,
+p {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+#nprogress .bar {
+  background: #1890ff !important;
+}
+
+.el-input {
+  height: 40px;
+  .el-input__wrapper {
+    border-radius: 8px;
+    border: 1px solid var(--border-color-v1);
+    box-shadow: none;
+    padding-inline: 12px;
+    .el-input__inner {
+      font-size: 14px;
+      font-family: PR;
+      color: var(--text-color-v1);
+      &::placeholder {
+        color: var(--text-color-v3);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  // 阴影样式
+  --shadow-normal: 0 0 4px 0 rgba(20, 56, 102, 0.04);
+  --shadow-small: 0 1px 4px 0 rgba(20, 56, 102, 0.08);
+  --shadow-large: 0 0 20px 0 rgba(26, 125, 255, 0.08);
+
+  // 颜色
+  --color-primary: #1a7dff;
+  --color-primary-secondary: #b2d4ff;
+  --color-primary-light: #ebf4ff;
+  --color-success: #2bd66f;
+  --color-success-secondary: #a8f0c5;
+  --color-success-light: #ebfff3;
+  --color-warning: #ffa033;
+  --color-warning-secondary: #ffdbb2;
+  --color-warning-light: #fff5eb;
+  --color-error: #f55549;
+  --color-error-secondary: #f5b0ab;
+  --color-error-light: #ffeceb;
+
+  // 文字颜色
+  --text-color-v0: #ffffff;
+  --text-color-v1: #292d33;
+  --text-color-v2: #525b66;
+  --text-color-v3: #7a8799;
+  --text-color-v4: #a3b5cc;
+
+  // 边框颜色
+  --border-color-v1: #e1eaf5;
+
+  // 背景色
+  --bg-color-v1: #ffffff;
+  --bg-color-v2: #f5f7fa;
+  --bg-color-v3: #f0f4fa;
+
+  // 遮罩层颜色
+  --mask-color: rgba(10, 28, 51, 0.4);
+  --mask-color-gradient: rgba(10, 28, 51, 0.6);
+}
