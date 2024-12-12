@@ -45,3 +45,10 @@
 .fd-r {
   flex-direction: row;
 }
+
+.card {
+  background-color: #ffffff;
+  box-shadow: var(--shadow-normal);
+  border-radius: 12px;
+  overflow-x: hidden;
+}

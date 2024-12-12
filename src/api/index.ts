@@ -9,10 +9,7 @@ import { ElMessage } from "element-plus";
 import { ResultData, ResultEnum } from "./interface";
 import { AxiosCanceler } from "./helper/cancel";
 import { useUserStore } from "@/stores/modules/user";
-import {
-  showFullScreenLoading,
-  tryHideFullScreenLoading
-} from "@/utils/fullscreen-loading";
+import { showFullScreenLoading, tryHideFullScreenLoading } from "@/utils/fullscreen-loading";
 import { checkStatus } from "./helper/check";
 
 export interface CustomAxiosRequestConfig extends InternalAxiosRequestConfig {
@@ -34,49 +31,55 @@ const axiosCanceler = new AxiosCanceler();
 
 class RequestHttp {
   service: AxiosInstance;
+  // 生成实例
   public constructor(config: AxiosRequestConfig) {
     this.service = axios.create(config);
-    // 请求拦截器
-    this.service.interceptors.request.use(
-      (config: CustomAxiosRequestConfig) => {
-        const userStore = useUserStore();
-        config.cancel ??= true;
-        config.cancel && axiosCanceler.addPending(config);
-        config.loading ??= true;
-        config.loading && showFullScreenLoading();
-        // 初始化请求头
-        if (config.headers && typeof config.headers.set === "function") {
-          config.headers.set("satoken", userStore.satoken ?? "");
-        }
-        return config;
-      },
-      (error: AxiosError) => {
-        return Promise.reject(error);
-      }
-    );
+    this.setupInterceptors();
+  }
+  // 设置请求和相应拦截器
+  private setupInterceptors() {
+    this.service.interceptors.request.use(this.handleRequset, this.handleRequestError);
+    this.service.interceptors.response.use(this.handleResponse, this.handleResponseError);
+  }
+  // 处理请求配置
+  private handleRequset(config: CustomAxiosRequestConfig) {
+    const userStore = useUserStore();
+    config.cancel ??= true;
+    config.cancel && axiosCanceler.addPending(config);
+    config.loading ??= true;
+    config.loading && showFullScreenLoading();
+    if (config.headers && typeof config.headers.set === "function") {
+      config.headers.set("satoken", userStore.satoken ?? "");
+    }
+    return config;
+  }
 
-    // 响应拦截器
-    this.service.interceptors.response.use(
-      (response: AxiosResponse & { config: CustomAxiosRequestConfig }) => {
-        const { data, config } = response;
-        const userStore = useUserStore();
-        axiosCanceler.removePending(config);
-        config.loading && tryHideFullScreenLoading();
-        // 错误处理（接口响应码为200，但接口业务码不为200）
-        if (data.code && data.code !== ResultEnum.SUCCESS) {
-          config.warning ??= true;
-          config.warning && ElMessage.error(data.msg);
-          return Promise.reject(data);
-        }
-        return data;
-      },
-      async (error: AxiosError) => {
-        const { response } = error;
-        tryHideFullScreenLoading();
-        if (response) checkStatus(response.status);
-        return Promise.reject(error);
-      }
-    );
+  private handleRequestError(error: AxiosError) {
+    return Promise.reject(error);
+  }
+  // 处理响应配置
+  private handleResponse(response: AxiosResponse & { config: CustomAxiosRequestConfig }) {
+    const { data, config } = response;
+    axiosCanceler.removePending(config);
+    config.loading && tryHideFullScreenLoading();
+    if (data.code && data.code !== ResultEnum.SUCCESS) {
+      config.warning ??= true;
+      config.warning && ElMessage.error(data.msg);
+      return Promise.reject(data);
+    }
+    return data;
+  }
+
+  private async handleResponseError(error: AxiosError) {
+    const userStore = useUserStore();
+    const { response } = error;
+    if (response?.status === ResultEnum.OVERDUE) {
+      userStore.clearUserInfo();
+      window.localStorage.clear();
+    }
+    tryHideFullScreenLoading();
+    if (response) checkStatus(response.status);
+    return Promise.reject(error);
   }
 
   get<T>(url: string, params?: object, _object = {}): Promise<ResultData<T>> {

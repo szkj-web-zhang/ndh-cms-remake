@@ -9,6 +9,7 @@ export const useUserStore = defineStore(
   () => {
     const satoken = ref("");
     const userInfo = ref<StoreData.UserStore["userInfo"]>();
+    // methods
     // 存储用户token
     const setToken = (val: string) => {
       satoken.value = val;
@@ -21,6 +22,7 @@ export const useUserStore = defineStore(
     const clearUserInfo = () => {
       userInfo.value = undefined;
       satoken.value = "";
+      window.localStorage.clear();
     };
     return {
       satoken,

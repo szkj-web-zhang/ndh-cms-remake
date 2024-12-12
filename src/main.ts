@@ -10,9 +10,9 @@ import "@/styles/theme.scss";
 import "@wangeditor/editor/dist/css/style.css";
 // icon
 import * as Icons from "@element-plus/icons-vue";
-// import "@/assets/icon/iconfont.js";
+import "@/assets/icon/iconfont.js";
 // 引入组件
-// import GlobalComponents from "@/components/index";
+import GlobalComponents from "@/components/index";
 import ElementPlus from "element-plus";
 // pinia
 import pinia from "@/stores/index";
@@ -25,4 +25,4 @@ Object.keys(Icons).forEach(key => {
   app.component(key, Icons[key as keyof typeof Icons]);
 });
 
-app.use(pinia).use(router).use(ElementPlus).mount("#app");
+app.use(pinia).use(router).use(ElementPlus).use(GlobalComponents).mount("#app");

@@ -13,5 +13,15 @@ export const staticRouter: RouteRecordRaw[] = [
       title: "login",
       permis: []
     }
+  },
+  {
+    path: "/layout",
+    name: "layout",
+    component: () => import("@/views/layout/index.vue"),
+    children: []
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    component: () => import("@/views/error/index.vue")
   }
 ];

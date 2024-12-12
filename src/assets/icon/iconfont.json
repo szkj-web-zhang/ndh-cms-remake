@@ -1,0 +1,471 @@
+{
+  "id": "4678560",
+  "name": "CMS-味来智厨",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "42484902",
+      "name": "团队",
+      "font_class": "copper-coin-line-1",
+      "unicode": "e756",
+      "unicode_decimal": 59222
+    },
+    {
+      "icon_id": "42484903",
+      "name": "数量数据",
+      "font_class": "database-2-line",
+      "unicode": "e75e",
+      "unicode_decimal": 59230
+    },
+    {
+      "icon_id": "42484901",
+      "name": "金额",
+      "font_class": "copper-coin-line-2",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "42484900",
+      "name": "社区服务",
+      "font_class": "copper-coin-line1",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "42484921",
+      "name": "导出",
+      "font_class": "file-transfer-line",
+      "unicode": "e75b",
+      "unicode_decimal": 59227
+    },
+    {
+      "icon_id": "41035988",
+      "name": "导航-区域管理",
+      "font_class": "earth",
+      "unicode": "e788",
+      "unicode_decimal": 59272
+    },
+    {
+      "icon_id": "41846700",
+      "name": "icon-退出",
+      "font_class": "icon-tuichu1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "41785762",
+      "name": "面包屑-分隔线",
+      "font_class": "slash-line",
+      "unicode": "e768",
+      "unicode_decimal": 59240
+    },
+    {
+      "icon_id": "41786248",
+      "name": "页签切换-左",
+      "font_class": "arrow-left-double-line",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "41786249",
+      "name": "页签切换-右",
+      "font_class": "arrow-right-double-line",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    },
+    {
+      "icon_id": "41785203",
+      "name": "返回撤回",
+      "font_class": "arrow-go-back-fill",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "41019853",
+      "name": "线-刷新",
+      "font_class": "refresh",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "41019830",
+      "name": "线-记录",
+      "font_class": "history",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "41019863",
+      "name": "线-图片",
+      "font_class": "image",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "41025038",
+      "name": "线-链接",
+      "font_class": "link-1",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "41784591",
+      "name": "斜体",
+      "font_class": "italic",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "41784592",
+      "name": "排列-方点",
+      "font_class": "list-check",
+      "unicode": "e762",
+      "unicode_decimal": 59234
+    },
+    {
+      "icon_id": "41784593",
+      "name": "排列-数字",
+      "font_class": "list-ordered",
+      "unicode": "e761",
+      "unicode_decimal": 59233
+    },
+    {
+      "icon_id": "41784594",
+      "name": "下划线",
+      "font_class": "underline",
+      "unicode": "e759",
+      "unicode_decimal": 59225
+    },
+    {
+      "icon_id": "41784595",
+      "name": "排列-圆点",
+      "font_class": "list-unordered",
+      "unicode": "e75f",
+      "unicode_decimal": 59231
+    },
+    {
+      "icon_id": "41784596",
+      "name": "文本对齐-居中",
+      "font_class": "align-center",
+      "unicode": "e764",
+      "unicode_decimal": 59236
+    },
+    {
+      "icon_id": "41784598",
+      "name": "删除线",
+      "font_class": "strikethrough",
+      "unicode": "e75c",
+      "unicode_decimal": 59228
+    },
+    {
+      "icon_id": "41784600",
+      "name": "文本对齐-居右",
+      "font_class": "align-right",
+      "unicode": "e75a",
+      "unicode_decimal": 59226
+    },
+    {
+      "icon_id": "41784601",
+      "name": "文本对齐-两端对齐",
+      "font_class": "align-justify",
+      "unicode": "e758",
+      "unicode_decimal": 59224
+    },
+    {
+      "icon_id": "41784603",
+      "name": "字体加粗",
+      "font_class": "bold",
+      "unicode": "e750",
+      "unicode_decimal": 59216
+    },
+    {
+      "icon_id": "41784605",
+      "name": "文本对齐-居左",
+      "font_class": "align-left",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "41784989",
+      "name": "多选-置灰",
+      "font_class": "duoxuan-zhihui",
+      "unicode": "e752",
+      "unicode_decimal": 59218
+    },
+    {
+      "icon_id": "41785001",
+      "name": "单选-置灰",
+      "font_class": "danxuan-zhihui",
+      "unicode": "e74d",
+      "unicode_decimal": 59213
+    },
+    {
+      "icon_id": "41785098",
+      "name": "线-缩小",
+      "font_class": "collapse-diagonal-line",
+      "unicode": "e765",
+      "unicode_decimal": 59237
+    },
+    {
+      "icon_id": "41785099",
+      "name": "排序-倒序",
+      "font_class": "sort-asc",
+      "unicode": "e766",
+      "unicode_decimal": 59238
+    },
+    {
+      "icon_id": "41785100",
+      "name": "排序-正序",
+      "font_class": "sort-desc",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "41785101",
+      "name": "线-放大",
+      "font_class": "expand-diagonal-line",
+      "unicode": "e753",
+      "unicode_decimal": 59219
+    },
+    {
+      "icon_id": "41019822",
+      "name": "线-关闭-1",
+      "font_class": "close",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "41785094",
+      "name": "面-左",
+      "font_class": "arrow-left-s-fill",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "41785093",
+      "name": "面-右",
+      "font_class": "arrow-right-s-fill",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "41785091",
+      "name": "面-下",
+      "font_class": "arrow-down-s-fill",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "41785092",
+      "name": "面-上",
+      "font_class": "arrow-up-s-fill",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "41785090",
+      "name": "线-团队长",
+      "font_class": "account-pin-circle-line",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "41019852",
+      "name": "线-搜索",
+      "font_class": "search",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "41019840",
+      "name": "线-日历",
+      "font_class": "calendar",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "41784810",
+      "name": "线-订单总量",
+      "font_class": "todo-line",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "41784809",
+      "name": "线-总人数",
+      "font_class": "user-2-line",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "41784808",
+      "name": "线-团队数量",
+      "font_class": "group-line",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "41019815",
+      "name": "导航-自提点管理",
+      "font_class": "map-pin",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "41784083",
+      "name": "线-渠道",
+      "font_class": "organization-chart",
+      "unicode": "e815",
+      "unicode_decimal": 59413
+    },
+    {
+      "icon_id": "41784092",
+      "name": "线-财务",
+      "font_class": "copper-coin-line",
+      "unicode": "e81e",
+      "unicode_decimal": 59422
+    },
+    {
+      "icon_id": "41784096",
+      "name": "线-用户",
+      "font_class": "user-5-line",
+      "unicode": "e822",
+      "unicode_decimal": 59426
+    },
+    {
+      "icon_id": "41784097",
+      "name": "线-平台设置",
+      "font_class": "paint-brush-line",
+      "unicode": "e823",
+      "unicode_decimal": 59427
+    },
+    {
+      "icon_id": "41784197",
+      "name": "线-菜品管理",
+      "font_class": "shopping-basket-line",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "41784597",
+      "name": "拖拽",
+      "font_class": "draggable",
+      "unicode": "e760",
+      "unicode_decimal": 59232
+    },
+    {
+      "icon_id": "41784604",
+      "name": "二级展开",
+      "font_class": "corner-down-right-fill",
+      "unicode": "e754",
+      "unicode_decimal": 59220
+    },
+    {
+      "icon_id": "41019827",
+      "name": "线-减少",
+      "font_class": "minus",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "41019857",
+      "name": "线-添加",
+      "font_class": "add",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "41019865",
+      "name": "线-右",
+      "font_class": "arrow-right-s",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "41019867",
+      "name": "线-下拉",
+      "font_class": "arrow-down-s",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "41019870",
+      "name": "线-左",
+      "font_class": "arrow-left-s",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "41024378",
+      "name": "线-问号",
+      "font_class": "question",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "41024525",
+      "name": "线-订单",
+      "font_class": "order",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "41024871",
+      "name": "线-未选",
+      "font_class": "checkbox-blank-circle",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "41026809",
+      "name": "面-选中",
+      "font_class": "checkbox-circle-fill",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "41035937",
+      "name": "线-银行卡",
+      "font_class": "bank-card",
+      "unicode": "e757",
+      "unicode_decimal": 59223
+    },
+    {
+      "icon_id": "41035943",
+      "name": "面-多选-选中",
+      "font_class": "checkbox-fill",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
+    },
+    {
+      "icon_id": "41035965",
+      "name": "线-多选-未选",
+      "font_class": "checkbox-blank",
+      "unicode": "e773",
+      "unicode_decimal": 59251
+    },
+    {
+      "icon_id": "41036018",
+      "name": "线-团队-2",
+      "font_class": "team-2",
+      "unicode": "e7a0",
+      "unicode_decimal": 59296
+    },
+    {
+      "icon_id": "41036081",
+      "name": "线-设置-3",
+      "font_class": "settings-3",
+      "unicode": "e7d0",
+      "unicode_decimal": 59344
+    },
+    {
+      "icon_id": "41036142",
+      "name": "面-微信支付",
+      "font_class": "wechat-pay-fill",
+      "unicode": "e7fe",
+      "unicode_decimal": 59390
+    }
+  ]
+}

@@ -10,6 +10,9 @@ export const checkStatus = (status: number) => {
     case 400:
       ElMessage.error("请求失败！请您稍后重试");
       break;
+    case 401:
+      ElMessage.error("登录失效！请您重新登录");
+      break;
     case 500:
       ElMessage.error("服务异常！");
       break;

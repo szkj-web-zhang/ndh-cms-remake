@@ -19,9 +19,7 @@
       <span>实名DID</span>
       扫码登录
     </p>
-    <div class="refresh-btn flex-inline al-c jc-c" @click="handleRefreshQrcode">
-      刷新二维码
-    </div>
+    <div class="refresh-btn flex-inline al-c jc-c" @click="handleRefreshQrcode">刷新二维码</div>
   </div>
 </template>
 
@@ -29,6 +27,9 @@
 import { qrcode_get } from "@/api/modules/login";
 import { Login, User } from "@/api/modules/login/type";
 import qrLogo from "@/assets/images/qr_logo.png";
+import { initDynamicRoute } from "@/router/modules/dynamic-route";
+import { useGlobalStore } from "@/stores/modules/global";
+import { useMenuStore } from "@/stores/modules/menu";
 import { useUserStore } from "@/stores/modules/user";
 import { useDebounceFn } from "@vueuse/core";
 import { ElMessage } from "element-plus";
@@ -41,6 +42,7 @@ interface WsDataType extends User.Response {
 
 // pinia
 const userStore = useUserStore();
+const globalStore = useGlobalStore();
 // route
 const router = useRouter();
 // 加载
@@ -141,12 +143,13 @@ const initSocket = (code?: string) => {
 /**
  * 登录成功后跳转
  */
-const handleAfterLogin = (data: WsDataType) => {
-  ElMessage.success("登录成功");
+const handleAfterLogin = async (data: WsDataType) => {
   userStore.setToken(data.token);
   userStore.setUserInfo(data.account);
   webSocket.value?.close();
-  router.push("/layout");
+  await globalStore.getNavigation();
+  await initDynamicRoute();
+  router.push("/");
 };
 </script>
 
